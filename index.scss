@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    .hero-bg {
+        background-image: url("../assets/Hero.png");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .content-div {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            gap: 22px;
+            color: white;
+            max-width: 1187px;
+            width: 100%;
+            margin: 0 auto;
+            .heading-1 {
+                color: #fff;
+                text-align: center;
+                font-family: "Manrope", sans-serif;
+                font-size: 65px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 73px; /* 112.308% */
+                letter-spacing: -0.5px;
+            }
+            .desc {
+                color: #fff;
+                text-align: center;
+                font-family: "Manrope", sans-serif;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; /* 141.176% */
+            }
+            .cta-btn {
+                color: var(--White, #fff);
+                text-align: center;
+                font-family: "Manrope", sans-serif;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px; /* 200% */
+                border-radius: 50px;
+                border: 1px solid #ff7a01;
+                background: #ff7a01;
+                box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+                padding: 10px 40px;
+            }
+        }
+    }
+}
+
+.features-section {
+    z-index: 2;
+    margin-top: -200px;
+    .outer-div {
+        display: flex;
+        max-width: 1509px;
+        justify-content: space-between;
+        margin: 0 auto;
+        .card-div {
+            background-image: url("../assets/card-img.png");
+            max-width: 482px;
+            width: 100%;
+            height: 321px;
+            transition: 0.2s ease all;
+            position: relative;
+            cursor: pointer;
+            .badgee {
+                position: absolute;
+                right: 0;
+                color: var(--White, #fff);
+                text-align: center;
+                font-family: "Manrope", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px; /* 150% */
+                letter-spacing: -0.8px;
+                padding: 16px 80px;
+                background: var(--Primary-blue, #1bbdea);
+                transition: 0.2s ease all;
+            }
+            .content {
+                opacity: 0;
+                padding-top: 71px;
+                padding-left: 64px;
+                padding-right: 64px;
+                transition: 0.2s ease all;
+                .heading-outer {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    color: #fff;
+                    font-family: "Manrope", sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: 24px; /* 120% */
+                    letter-spacing: -0.8px;
+                }
+                .desc {
+                    color: #fff;
+                    font-family: "Manrope", sans-serif;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px; /* 152.941% */
+                    margin-top: 16px;
+                }
+                button {
+                    margin-top: 16px;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    padding: 0;
+                    color: var(--White, #fff);
+                    font-family: "Manrope", sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 100%; /* 14px */
+                    letter-spacing: -0.28px;
+                }
+            }
+            &:hover {
+                border-radius: 5px;
+                background: #01252eec;
+                opacity: 0.5;
+
+                .content {
+                    opacity: 1;
+                }
+                .badgee {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+.about-section {
+    margin-top: 219px;
+    .outer-div {
+        display: flex;
+        align-items: center;
+        gap: 101px;
+        .img-div {
+            max-width: 1069px;
+            height: 551px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content-div {
+            max-width: 531px;
+            .headd {
+                color: var(--Heading, #2e2e2e);
+                font-family: Manrope;
+                font-size: 46px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 55.2px; /* 120% */
+                letter-spacing: -1.84px;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: -14px;
+                    left: 0;
+                    background: linear-gradient(90deg, #1bbdea 0%, #1bbdea 50%, rgba(107, 107, 107, 0.5) 100%);
+                    height: 3px;
+                    width: 51px;
+                }
+            }
+            .desc {
+                margin-top: 31px;
+                margin-bottom: 46px;
+                color: var(--Seconary-Gray, #6b6b6b);
+                font-family: Manrope;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26.5px; /* 155.882% */
+            }
+            button {
+                color: var(--White, #fff);
+                text-align: center;
+                font-family: "Manrope", sans-serif;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px; /* 200% */
+                border-radius: 50px;
+                border: 1px solid #ff7a01;
+                background: #ff7a01;
+                box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+                padding: 10px 40px;
+            }
+        }
+    }
+}
